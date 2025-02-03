@@ -11,7 +11,9 @@ public class UserOperations {
         private String email;
         private boolean active;
 
-        public User() {}
+        public User() {
+
+        }
 
         public User(String id, String email, boolean active) {
             this.id = id;
