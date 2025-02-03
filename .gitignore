@@ -398,3 +398,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+.gitignore
+node_modules/
+.DS_Store
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+node-app-bug-repro/
+_github*/
+*.sh
+target/
+.vscode/
