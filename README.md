@@ -7,7 +7,7 @@ This repository demonstrates how to use the [Azure Cosmos DB Linux emulator](htt
 
 > Read more in the [official documentation](TODO link).
 
-## Instructions
+## Try it out!
 
 To fork this repository, click the **Fork** button at the top-right corner of the repository page to create a copy of the repository under your own GitHub account. Go to your GitHub account, open the repository and make sure to enable workflows in the repository settings.
 
