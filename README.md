@@ -39,3 +39,5 @@ git push origin main
 ```
 
 After pushing your changes, GitHub Actions will automatically run the workflow. Go to the **Actions** tab in your repository to see the status and results of the workflows. Review any logs or output to ensure the workflows are running correctly.
+
+![workflow run](images/result.png)
