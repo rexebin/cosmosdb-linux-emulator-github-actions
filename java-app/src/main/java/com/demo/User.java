@@ -8,10 +8,6 @@ public class User {
     private String name;
     private String country;
 
-    public User(){
-
-    }
-
     public User(String email, String name, String country) {
         this.id = UUID.randomUUID().toString();
         this.email = email;

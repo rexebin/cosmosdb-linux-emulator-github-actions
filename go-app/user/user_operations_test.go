@@ -97,23 +97,3 @@ func TestReadItem(t *testing.T) {
 	require.Equal(t, "user43@test.com", userItem.Email)
 	require.True(t, true, userItem.Active)
 }
-
-// func NewCosmosClient(connectionString string) (*azcosmos.Client, error) {
-//     // Create a custom HTTP client with InsecureSkipVerify set to true
-//     customTransport := &http.Transport{
-//         TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
-//     }
-//     customHTTPClient := &http.Client{Transport: customTransport}
-
-//     // Create a Cosmos DB client with the custom HTTP client
-//     clientOptions := azcosmos.ClientOptions{
-// 		ClientOptions: azcore.ClientOptions{
-			
-// 		},
-//     }
-//     client, err := azcosmos.NewClientFromConnectionString(connectionString, &clientOptions)
-//     if err != nil {
-//         return nil, err
-//     }
-//     return client, nil
-// }

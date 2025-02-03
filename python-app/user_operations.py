@@ -26,5 +26,5 @@ def read_user(container: ContainerProxy, user_id: str) -> User:
         item_response = container.read_item(item=user_id, partition_key=user_id)
         return User(item_response["id"], item_response["email"], item_response["active"])
     except Exception as e:
-        print("Error reading user", e)
+        print("Error reading user info", e)
         raise e
