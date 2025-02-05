@@ -2,15 +2,13 @@
 
 ![GitHub Actions CI](images/CI.png)
 
-This repository demonstrates how to use the [Azure Cosmos DB Linux emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux) in GitHub Actions to run integration tests. It configures the emulator as part of a GitHub Actions CI workflow for [Python](https://github.com/AzureCosmosDB/cosmosdb-linux-emulator-github-actions/blob/main/.github/workflows/python.yml), [Java](https://github.com/AzureCosmosDB/cosmosdb-linux-emulator-github-actions/blob/main/.github/workflows/java.yml) and [Go](https://github.com/AzureCosmosDB/cosmosdb-linux-emulator-github-actions/blob/main/.github/workflows/go.yml) applications on both x64 and ARM64 architectures (demonstrated for Linux runner using `ubuntu`) 
+This repository demonstrates how to use the [Azure Cosmos DB Linux emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux) in GitHub Actions to run integration tests. It configures the emulator as part of a GitHub Actions CI workflow for Python, Java, .NET, and Go applications on both `x64` and `ARM64` architectures (demonstrated for Linux runner using `ubuntu`).
 
 |        | x64 | ARM64 |
 |--------|-----|-------|
 | Linux  | Demonstrated in this sample    |  Demonstrated in this sample ([GitHub Actions Linux arm64 hosted runners](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/))     |
 | Windows|  GitHub Actions service containers are [not supported in non-Linux runners](https://docs.github.com/en/actions/use-cases-and-examples/using-containerized-services/about-service-containers#about-service-containers). You can include `steps` to install Docker and start the container   |  Possible with [ARM-based Windows runner](https://github.blog/news-insights/product-news/arm64-on-github-actions-powering-faster-more-efficient-build-systems/)     |
 | MacOS  |  See [license restrictions](https://github.com/actions/runner-images/issues/2150)   |  See [license restrictions](https://github.com/actions/runner-images/issues/2150)     |
-
-> Read more in the [official documentation](coming soon).
 
 ## Try it out!
 
@@ -33,7 +31,7 @@ git clone https://github.com/your-username/cosmosdb-linux-emulator-github-action
 cd cosmosdb-linux-emulator-github-actions
 ```
 
-To trigger the workflow, make a small change to any of the code (Java, Python, or Go), add and commit your changes. Note that only the workflow for the specific language you changed will run.
+To trigger the workflow, make a small change to any of the code (.NET, Java, Python, or Go), add and commit your changes. Note that only the workflow for the specific language you changed will run.
 
 Push your changes to your forked repository on GitHub:
 
@@ -45,4 +43,4 @@ git push origin main
 
 After pushing your changes, GitHub Actions will automatically run the workflow. Go to the **Actions** tab in your repository to see the status and results of the workflows. Review any logs or output to ensure the workflows are running correctly.
 
-![workflow run](images/result.png)
+![workflow run](images/dotnet-result.png)
