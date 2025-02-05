@@ -23,13 +23,8 @@ public class UserOperationsTest {
 
         String endpoint = connectionString.split(";")[0].split("=")[1];
         endpoint = endpoint.replaceAll("http://", "https://");
-        System.out.println("endpoint 1 === " + endpoint);
-
-        // endpoint = "https://" + endpoint.split("://")[1];
-        // System.out.println("endpoint 2 === " + endpoint);
 
         String key = connectionString.split(";")[1].split("=")[1];
-        // System.out.println("key === " + key);
 
         try {
             this.client = new CosmosClientBuilder()

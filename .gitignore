@@ -411,3 +411,4 @@ _github*/
 *.sh
 target/
 .vscode/
+*.cert
